@@ -53,16 +53,16 @@ def main(argv):
     if inTransaction:
         transaction.append(line)
         longString += item
+
+        if line == '</STMTTRN>':
+          inTransaction = False
+
+          for item in fixTransaction(transaction):
+            if item == '<FITID>NONE':
+              item = '<FITID>' + hashlib.md5(longString.encode()).hexdigest()
+            ofile.write(item + "\n")
     else:
         ofile.write(line + "\n")
-
-    if line == '</STMTTRN>':
-      inTransaction = False
-
-      for item in fixTransaction(transaction):
-        if item == '<FITID>NONE':
-          item = '<FITID>' + hashlib.md5(longString.encode()).hexdigest()
-        ofile.write(item + "\n")
 
 
 if __name__ == "__main__":
