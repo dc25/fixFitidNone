@@ -37,7 +37,5 @@ def main(argv):
     else:
         print(line)
 
-
 if __name__ == "__main__":
   main(sys.argv[1:])
-
