@@ -52,12 +52,12 @@ def main(argv):
 
     if inTransaction:
         transaction.append(line)
-        longString += item
+        longString += line
 
         if line == '</STMTTRN>':
           inTransaction = False
 
-          for item in fixTransaction(transaction):
+          for item in transaction:
             if item == '<FITID>NONE':
               item = '<FITID>' + hashlib.md5(longString.encode()).hexdigest()
             ofile.write(item + "\n")
