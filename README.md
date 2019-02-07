@@ -5,7 +5,7 @@ This program repairs QFX files that suffer from the "FITID NONE" bug that was re
 ## Usage:
 
 * Install python (tested with python 3 but python 2 and python 3 should both work) from [here][2].
-* Copy fixFitidNone.py to your desktop by _right_ clicking on [THIS LINK][4] and selecting "Save Link As...".
+* Copy fixFitidNone.py to your desktop by *right* clicking on [THIS LINK][4] and selecting "Save Link As...".
 * To fix a corrupted QFX file, drop it on the script you just put on your desktop.
 * The QFX file will be modified to have unique FITID values where before there were invalid "NONE" values.
 * A backup of the original file with the extension ".original" will be created.
