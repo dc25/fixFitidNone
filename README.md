@@ -1,6 +1,6 @@
 ## Overview:
 
-This program repairs QFX files that suffer from the "FITID NONE" bug that was reported by user JayLo in [this thread][1] the Quicken Community Forurm.  The corrupt QFX files reportedly started downloading on Jan 31 2019 and, as of this writing (Feb 5, 2019) are still appearing.
+This program repairs QFX files that suffer from the "FITID NONE" bug that was reported by user JayLo in [this thread][1] the Quicken Community Forurm.  The problem seems to affect online Chase Bank credit card accounts. The corrupt QFX files reportedly started downloading on Jan 31 2019 and, as of this writing (Feb 5, 2019) are still appearing.
 
 ## Usage:
 
