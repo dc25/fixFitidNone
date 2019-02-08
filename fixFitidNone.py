@@ -1,5 +1,6 @@
 #! /usr/bin/python 
 # Python program to fix up the Chase bad QFX export FITID=NONE
+# Get the latest version of this code at https://github.com/dc25/fixFitidNone
 # modified version of : fixChaseFitidNone.py by hleofxquotes@gmail.com
 # (see https://social.microsoft.com/Forums/mvpforum/en-US/f9a4fa77-fe71-4eed-a66e-c828572ab911/fixchasefitidnonepy-python-script-to-fix-up-chase-ltfitidgtnone?forum=money)
 # python fixChaseFitidNone.py Checking1.qfx 
